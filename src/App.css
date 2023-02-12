@@ -1,0 +1,259 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.navigation {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  background-color: #fff;
+  padding: 20px 0;
+}
+.navigation .logo {
+  width: 20%;
+  background-image: url("../src/assets//Logo.svg");
+  background-repeat: no-repeat;
+}
+.navigation ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.navigation ul li {
+  margin-right: 30px;
+  color: #000;
+}
+.navigation ul li a {
+  color: #000;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 20px;
+}
+.navigation ul li a:hover {
+  color: #f4ce14;
+  text-decoration: none;
+  font-weight: 600;
+}
+.home-main {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.home-main .first-section {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: #495e57;
+  padding: 20px;
+}
+.home-main .home-main-paragraph {
+  width: 35%;
+}
+.home-main .home-main-paragraph h1 {
+  color: #f4ce14;
+  margin: 0;
+  font-size: 56px;
+}
+.home-main .home-main-paragraph h3 {
+  font-size: 32px;
+}
+.home-main .home-main-paragraph h3,
+p {
+  color: #fff;
+  margin: 0;
+  width: 400px;
+}
+.home-main button {
+  background-color: #f4ce14;
+  font-weight: 700;
+  border: 1px solid #f4ce14;
+  border-radius: 12px;
+  padding: 10px;
+  margin-top: 10px;
+  height: 40px;
+}
+.home-main .home-main-image img {
+  width: 375px;
+  height: 375px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: -60px;
+}
+.home-main .second-section {
+  width: 100%;
+}
+.home-main .second-section .section-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.home-main .second-section .section-header h1 {
+  width: 50%;
+  font-size: 62px;
+}
+.dish-card {
+  width: 16%;
+  background-color: #edefee;
+  color: #000;
+  border: 1px solid #edefee;
+  border-radius: 10px;
+  padding: 20px;
+  margin-right: 10px;
+}
+
+.dish-card h3 {
+  font-size: 24px;
+  font-weight: 600;
+}
+.dish-card p {
+  font-size: 16px;
+  width: 100%;
+  color: #495e57;
+}
+.dish-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: contain;
+}
+.dish-header {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+.dish-header h3 {
+  font-size: 20px;
+  color: #000;
+  width: 100%;
+}
+.dish-header p {
+  font-size: 16px;
+  color: #ee9972;
+  text-align: end;
+}
+.special-dishes {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: center;
+}
+@media screen and (max-width: 1300px) {
+  .dish-card {
+    width: 40%;
+    margin: 20px;
+  }
+  .home-main .home-main-image img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: -100px;
+    margin-top: 20px;
+  }
+  .home-main .home-main-paragraph {
+    width: 45%;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .home-main .home-main-paragraph {
+    width: 50%;
+  }
+  .home-main .home-main-image img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: -50px;
+    margin-top: 20px;
+  }
+}
+
+.booking-page {
+  background-color: #495e57;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  color: #fff;
+}
+.booking-page h1 {
+  width: 100%;
+  font-size: 100px;
+  text-align: center;
+  margin: 0;
+}
+
+.reservation-form {
+  margin: 0;
+  width: 60%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.reservation-form input,
+select {
+  width: 100%;
+  height: 35px;
+  border: 1px solid #e6e6e6;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  padding: 0;
+}
+.reservation-form input[type="submit"] {
+  background-color: #f4ce14;
+  font-weight: 700;
+  border: 1px solid #f4ce14;
+  border-radius: 12px;
+  padding: 10px;
+  margin-top: 10px;
+  height: 40px;
+  cursor: pointer;
+}
+
+.confirmation-page {
+  background-color: #495e57;
+  height: 100vh;
+  padding: 50px;
+  color: #f4ce14;
+}
